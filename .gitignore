@@ -1,0 +1,8 @@
+.env
+/docker-compose.override.yaml
+data/
+
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

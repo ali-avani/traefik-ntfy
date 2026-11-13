@@ -1,0 +1,16 @@
+# Per-server additions. Uncomment what you need, save as docker-compose.override.yaml,
+# then run bash ./install.sh --update-env so it is added to COMPOSE_FILE.
+
+# services:
+#   ntfy:
+#     environment:
+#       # Push to iOS through ntfy.sh, because iOS apps cannot keep their own connection
+#       NTFY_UPSTREAM_BASE_URL: https://ntfy.sh
+#       # Attachments up to 15 MB, kept on disk
+#       NTFY_ATTACHMENT_CACHE_DIR: /var/lib/ntfy/attachments
+#       NTFY_ATTACHMENT_FILE_SIZE_LIMIT: 15M
+#       # Keepalive events for clients behind proxies that close quiet connections
+#       NTFY_KEEPALIVE_INTERVAL: 30s
+#       TZ: Asia/Tehran
+#     extra_hosts:
+#       - "mail.internal.example.com:10.0.0.5"
